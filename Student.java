@@ -31,9 +31,9 @@ public class Student implements Serializable {
 
     // Calculate total marks using Stream API
     public int getTotalMarks() {
-        return subjectMarks.values().stream() //Get all the marks from the map (values()),
-                .mapToInt(Integer::intValue) //Convert them to integers,
-                .sum(); //Add them together using sum().
+        return subjectMarks.values().stream()
+                .mapToInt(Integer::intValue)
+                .sum();
     }
 
     // Calculate average marks using Stream API
